@@ -1,0 +1,38 @@
+.nav {
+
+  &__list {
+    display: flex;
+    gap: 33px;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: #EFE7BE;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      bottom: -3px;
+      right: 0;
+      width: 0%;
+      height: 1px;
+      background-color: #EFE7BE;
+      transition: width .3s ease-in-out;
+    }
+
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+

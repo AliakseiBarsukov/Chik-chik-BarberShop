@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <title>Chik-chik - BarberShop</title>
 </head>
+
 <body>
   <header class="header">
     <div class="container">
-      <img class="header__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik">
-      <nav class="header__navigation nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#price" class="nav__link">Стоимость услуг</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#about" class="nav__link">О нас</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#reserve" class="header__link main-link">Записаться</a>
+      <div class="header__container">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik">
+        <nav class="header__navigation nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#price" class="nav__link">Стоимость услуг</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">О нас</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#reserve" class="header__link main-link">Записаться</a>
+      </div>
     </div>
   </header>
 
@@ -40,7 +43,7 @@
               <li class="slider__item">
                 <img class="slider__img" src="img/photo01.jpg" alt="картинка слайдера">
               </li>
-              <li class="slider__item">
+              <li class="slider__item slider__item_active">
                 <img class="slider__img" src="img/photo02.jpg" alt="картинка слайдера">
               </li>
               <li class="slider__item">
@@ -63,8 +66,8 @@
               </li>
             </ul>
 
-            <button class="slider__arrow slidr__arrow_left" aria-label="предыдущий слайд"></button>
-            <button class="slider__arrow slidr__arrow_right" aria-label="следующий слайд"></button>
+            <button class="slider__arrow slider__arrow_left" aria-label="предыдущий слайд"></button>
+            <button class="slider__arrow slider__arrow_right" aria-label="следующий слайд"></button>
           </div>
         </div>
       </div>
@@ -118,27 +121,30 @@
       <div class="container">
         <h2 class="abaut__title">Мы помогаем всем мужчинам выглядеть уверенно</h2>
 
-          <p class="abaut__description">Сhik chik — это намного больше, чем просто барберная. Это место, где вам помогут найти свой собственный, неповторимый стиль. Стоит довериться нашим мастерам один раз, и, поверьте, новый образ не оставит Вас равнодушным. Мужские стрижки и опасное бритье — это наш профиль, и мы уверены, что наши барберы делают это лучше всех.</p>
-          
-          <ul class="about__list">
-            <li class="aboute__item">
-              <h3 class="about__item-title">Топ специалисты</h3>
-              <p class="about__item-descripyion">Мы подстрижем вас на высшем уровне</p>
-            </li>
+        <p class="abaut__description">Сhik chik — это намного больше, чем просто барберная. Это место, где вам помогут
+          найти свой собственный, неповторимый стиль. Стоит довериться нашим мастерам один раз, и, поверьте, новый образ
+          не оставит Вас равнодушным. Мужские стрижки и опасное бритье — это наш профиль, и мы уверены, что наши барберы
+          делают это лучше всех.</p>
 
-            <li class="aboute__item">
-              <h3 class="about__item-title">Мастера бород и усов</h3>
-              <p class="about__item-descripyion">Мы заботливо уложим  вашу бороду и усы</p>
-            </li>
+        <ul class="about__list">
+          <li class="aboute__item">
+            <h3 class="about__item-title">Топ специалисты</h3>
+            <p class="about__item-descripyion">Мы подстрижем вас на высшем уровне</p>
+          </li>
 
-            <li class="aboute__item">
-              <h3 class="about__item-title">Гарантия качества</h3>
-              <p class="about__item-descripyion">Мы используем только профессиональные средства</p>
-            </li>
-          </ul>
+          <li class="aboute__item">
+            <h3 class="about__item-title">Мастера бород и усов</h3>
+            <p class="about__item-descripyion">Мы заботливо уложим  вашу бороду и усы</p>
+          </li>
+
+          <li class="aboute__item">
+            <h3 class="about__item-title">Гарантия качества</h3>
+            <p class="about__item-descripyion">Мы используем только профессиональные средства</p>
+          </li>
+        </ul>
       </div>
     </section>
-    
+
     <section id="reserve" class="reserve">
       <div class="container">
         <h2 class="reserve__title">Как записаться к нам</h2>
@@ -146,7 +152,7 @@
         <ol class="reserve__list">
           <li class="reserve__item">Выберите услугу, можно выбрать сразу несколько</li>
           <li class="reserve__item">Выберите специалиста</li>
-          <li class="reserve__item">Выберите удобный день и время</li> 
+          <li class="reserve__item">Выберите удобный день и время</li>
         </ol>
       </div>
 
@@ -266,7 +272,7 @@
                 <input class="radio__input" type="radio" name="time">
                 <span class="radio__label">10:00-11:30</span>
               </label>
-              
+
               <label class="radio">
                 <input class="radio__input" type="radio" name="time">
                 <span class="radio__label">11:30-13:00</span>
@@ -290,7 +296,7 @@
           </fieldset>
         </div>
 
-        <button class="reserve__btn main-link">Записаться</button>
+        <button class="reserve__btn main-link" disabled>Записаться</button>
       </form>
     </section>
   </main>
@@ -300,7 +306,7 @@
       <div class="footer__wrapper">
         <img class="footer__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik">
 
-        <nav class="footer__navigation nav">
+        <div class="footer__navigation nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#price" class="nav__link">Стоимость услуг</a>
@@ -309,7 +315,7 @@
               <a href="#about" class="nav__link">О нас</a>
             </li>
           </ul>
-        </nav>
+        </div>
 
         <ul class="footer__list">
           <li class="footer__item">Designer: Anastasia Ilina</li>
@@ -320,4 +326,5 @@
     </div>
   </footer>
 </body>
+
 </html>
