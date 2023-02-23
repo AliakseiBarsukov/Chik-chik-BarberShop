@@ -1,5 +1,6 @@
 $back: #241D1C;
 $text: #F6F3E3;
+$grey-text: #BFBDB2;
 $grey: #BFBDB2;
 $bg: #241D1C;
 
@@ -17,7 +18,7 @@ $bg: #241D1C;
 }
 
 @mixin mobile {
-  @media (max-width: 540px) {
+  @media (max-width: 560px) {
     @content;
   }
 }
