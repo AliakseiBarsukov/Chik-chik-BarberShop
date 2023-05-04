@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Chik-chik - BarberShop</title>
-<script defer src="main.84d02cb324168b679eb1.js"></script></head>
+<script defer src="main.4ec3c93d876774192532.js"></script></head>
 
 <body>
   <header class="header">
@@ -157,7 +157,7 @@
 
         <form class="reserve__form">
           <div class="reserve__form-container">
-            <fieldset class="reserve__fieldset">
+            <fieldset class="reserve__fieldset reserve__fieldset_service">
               <legend class="reserve__legend">Услуга</legend>
   
               <label class="radio">
@@ -196,12 +196,12 @@
               </label>
             </fieldset>
   
-            <fieldset class="reserve__fieldset">
+            <fieldset class="reserve__fieldset" name="fieldspec">
               <legend class="reserve__legend">Специалист</legend>
   
               <label class="radio">
                 <input class="radio__input" type="radio" name="spec">
-                <span class="radio__label radio__label_spec radio__label_spec-1">Игорь</span>
+                <span class="radio__label radio__label_spec radio__label_spec-1" style="--bg-image: url(assets/img/spec-1.png)">Игорь</span>
               </label>
   
               <label class="radio">
@@ -225,10 +225,10 @@
               </label>
             </fieldset>
   
-            <fieldset class="reserve__fieldset reserve__fieldset_last">
+            <fieldset class="reserve__fieldset reserve__fieldset_last" name="fielddata">
               <legend class="reserve__legend">Дата и время</legend>
   
-              <fieldset class="reserve__fieldset reserve__fieldset_sab">
+              <fieldset class="reserve__fieldset reserve__fieldset_sab" name="fieldmonth">
                 <label class="radio">
                   <input class="radio__input" type="radio" name="month">
                   <span class="radio__label">Январь</span>
@@ -245,7 +245,7 @@
                 </label>
               </fieldset>
   
-              <fieldset class="reserve__fieldset reserve__fieldset_sab">
+              <fieldset class="reserve__fieldset reserve__fieldset_sab" name="fieldday">
                 <label class="radio">
                   <input class="radio__input" type="radio" name="day">
                   <span class="radio__label">18 января</span>
@@ -266,7 +266,7 @@
                 </label>
               </fieldset>
   
-              <fieldset class="reserve__fieldset reserve__fieldset_sab">
+              <fieldset class="reserve__fieldset reserve__fieldset_sab" name="fieldtime">
                 <label class="radio">
                   <input class="radio__input" type="radio" name="time">
                   <span class="radio__label">10:00-11:30</span>
@@ -295,7 +295,7 @@
             </fieldset>
           </div>
   
-          <button class="reserve__btn main-link" disabled>Записаться</button>
+          <button class="reserve__btn main-link" disabled id="btn">Записаться</button>
         </form>
       </div>
     </section>
