@@ -63,7 +63,7 @@ button {
 
 .visualy-hidden {
   position: fixed;
-  transform: scale(0 );
+  transform: scale(0);
 }
 
 .main-link {
@@ -77,6 +77,7 @@ button {
   line-height: 100%;
   text-transform: uppercase;
   transition: background-color .3s ease-in-out;
+  border: none;
 
   &:hover:not(:disabled) {
     background-color: #EFE7BE;

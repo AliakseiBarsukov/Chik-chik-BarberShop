@@ -41,6 +41,7 @@
     }
     @include tablet {
       margin-bottom: 32px;
+      font-size: 16px;
     }
     @include mobile {
       font-size: 12px;
@@ -50,21 +51,29 @@
   // .about__list
 
   &__list {
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: flex-start;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 384px);
-    gap: 24px 32px;
+    grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+    gap: 24px;
+
+    @include laptop {
+      grid-template-columns: repeat(auto-fill, minmax(287px, 1fr));
+    }
+    @include tablet {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    @include mobile {
+      grid-template-columns: minmax(272px, 1fr);
+    }
   }
 
   // .aboute__item
 
   &__item {
-    padding: 6px 6px 6px 96px;
+    padding: 6px 0 6px 96px;
     background-repeat: no-repeat;
     background-position: left;
     background-size: 80px;
+    min-height: 80px;
 
     // .aboute__item_top
     &_top {
@@ -74,16 +83,28 @@
     // .aboute__item_master
     &_master {
       background-image: url("./../img/master.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
     }
     
     // .aboute__item_guarantee
 
     &_guarantee {
       background-image: url("./../img/guarantee.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
+    }
+
+    @include laptop {
+      padding-top: 96px;
+      background-position: top left;
+      padding-left: 0;
+    }
+    @include tablet {
+      padding-left: 96px;
+      padding-top: 0;
+      background-position: left;
+    }
+    @include mobile {
+      background-size: 64px;
+      min-height: 64px;
+      padding-left: 72px;
     }
   }
 
@@ -95,6 +116,7 @@
     font-size: 22px;
     line-height: 120%;
     text-transform: uppercase;
+    margin-bottom: 8px;
 
     @include tablet {
       font-size: 16px;

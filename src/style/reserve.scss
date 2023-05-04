@@ -16,6 +16,10 @@
     line-height: 120%;
     text-transform: uppercase;
     margin-bottom: 24px;
+
+    @include tablet {
+      font-size: 32px;
+    }
   }
 
   // .reserve__list
@@ -36,11 +40,6 @@
     &:last-child {
       margin-bottom: 0;
     }
-  }
-
-  // .reserve__form
-
-  &__form {
   }
 
   // .reserve__form-container
@@ -79,11 +78,6 @@
         gap: 20px;
       }
     }
-
-    // .reserve__fieldset_sab
-
-    &_sab {
-    }
   }
 
   // .reserve__legend
@@ -105,6 +99,10 @@
 
   &__btn {
     margin-top: 40px;
+  }
+
+  &__accses {
+    padding-top: 20px;
   }
 }
 

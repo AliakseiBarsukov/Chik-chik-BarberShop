@@ -1,3 +1,6 @@
+import { addPreload,
+        removePreload} from './preload.js';
+
 export const slider = () => {
 
   const addPreload = (elem) => {
